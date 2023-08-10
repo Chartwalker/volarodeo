@@ -1,3 +1,5 @@
 # never check in !
+./src/volarodeo-rpt
 ./src/config.mk
 ./src/config.h
+./include/volarodeo/config.h
