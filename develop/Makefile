@@ -1,5 +1,5 @@
-.PHONY: configure
+.PHONY: all
 
-configure: ;
-    ./configure
-    make -C src
+all: ;
+	./configure.sh
+	make -C src
