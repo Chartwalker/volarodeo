@@ -2,4 +2,4 @@
 
 all: ;
 	./configure.sh
-	make -C src
+	make -C ($TSC_CDN_SRC)
