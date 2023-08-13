@@ -30,7 +30,7 @@ int main (int argc, char **argv) {
 
   /* creating widgets */
   /* load image to Pixbuf */
-  pic = gdk_pixbuf_new_from_file ("icon/rattelsnake.png", NULL);
+  pic = gdk_pixbuf_new_from_file ("icons/rattelsnake.png", NULL);
   /* set defaults */
   win = g_object_new (GTK_TYPE_WINDOW,
                       "title", TSC_PRJG_VERSION_S,
