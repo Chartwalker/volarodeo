@@ -1,20 +1,22 @@
 include ./config.mk
 
-.PHONY: libs includes test clean
+.PHONY: libs includes test clean gui
 
-all: clean includes libs $(TSC_CDN_GUI) test
+all: clean includes libs gui test
 
 includes:
-	make -C ../include includes
+	make -C $(TSC_CDPA_GUI) includes
 
 libs:
-	make -C ../lib libs
+	make -C $(TSC_CDPA_GUI) libs
 
-$(TSC_CDN_GUI):
-	make -C ./$(TSC_CDN_GUI) all
+gui:
+	make -C $(TSC_CDPA_GUI) all
 
 test:
+	make -C $(TSC_CDPA_GUI) test
 
 clean:
+	make -C $(TSC_CDPA_GUI) clean
 
 
