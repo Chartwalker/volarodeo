@@ -98,7 +98,7 @@ TSC_SBP_RMDIRI=`which rmdir`" --ignore-fail-on-non-empty"
 # linker and compiler flags
 CFLAGS_GLIB=`pkg-config --cflags glib-2.0`" -I /usr/lib64"
 CFLAGS_GTK=`pkg-config --cflags gtk+-3.0`
-LIBS_GLIB=`pkg-config --libs glib-2.0`" -L /usr/lib64  -lglib-2.0 -lfl -ly"
+LIBS_GLIB=`pkg-config --libs glib-2.0`" -L /usr/lib64  -lglib-2.0"
 LIBS_GTK=`pkg-config --libs gtk+-3.0`
 
 # create dirs relative to configure - no error if exist
