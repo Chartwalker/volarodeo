@@ -157,91 +157,91 @@ $TSC_SBP_MKDIR -p $TSC_CDPR_CONF"/"$TSC_CDN_SRPM
 
 tsc_write_env(){
 
-    $TSC_SBP_ECHOE "write" $5
-    $TSC_SBP_ECHOE $2" "$TSC_PRJG_COPYR > $5
-    $TSC_SBP_ECHOE $2" "$TSC_PRJG_COMP >> $5
-    $TSC_SBP_ECHOE $2" "$TSC_PRJG_DEDIT >> $5
+	$TSC_SBP_ECHOE "write" $5
+	$TSC_SBP_ECHOE $2" "$TSC_PRJG_COPYR > $5
+	$TSC_SBP_ECHOE $2" "$TSC_PRJG_COMP >> $5
+	$TSC_SBP_ECHOE $2" "$TSC_PRJG_DEDIT >> $5
 
 	$TSC_SBP_ECHOE "\n"$2" projekt global settings - name of the game :-) as strings" >> $5
 
 	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_COPYR$4"$TSC_PRJG_COPYR >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_DEDIT$4"$TSC_PRJG_DEDIT >> $5
-	
-    $TSC_SBP_ECHOE "\n"$1"TSC_PRJG_TS$4"$TSC_PRJG_TS >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_TS_S$4"$TSC_PRJG_TS_S >> $5
-	
-    $TSC_SBP_ECHOE "\n"$1"TSC_PRJG_COMP_S$4"$TSC_PRJG_COMP_S >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_DEDIT$4"$TSC_PRJG_DEDIT >> $5
 
-    $TSC_SBP_ECHOE "\n"$1"TSC_PRJG_FNAME$4"$TSC_PRJG_FNAME >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_PNAME$4"$TSC_PRJG_PNAME >> $5
+	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_TS$4"$TSC_PRJG_TS >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_TS_S$4"$TSC_PRJG_TS_S >> $5
 
-    $TSC_SBP_ECHOE "\n"$1"TSC_PRJG_LANG_DE$4"$TSC_PRJG_LANG_DE >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_LANG_EN$4"$TSC_PRJG_LANG_EN >> $5
+	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_COMP_S$4"$TSC_PRJG_COMP_S >> $5
+
+	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_FNAME$4"$TSC_PRJG_FNAME >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_PNAME$4"$TSC_PRJG_PNAME >> $5
+
+	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_LANG_DE$4"$TSC_PRJG_LANG_DE >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_LANG_EN$4"$TSC_PRJG_LANG_EN >> $5
 
 	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_MAJOR$4"$TSC_PRJG_MAJOR >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_MINOR$4"$TSC_PRJG_MINOR >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_RELAESE$4"$TSC_PRJG_RELEASE >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_PATCH$4"$TSC_PRJG_PATCH >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_MINOR$4"$TSC_PRJG_MINOR >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_RELAESE$4"$TSC_PRJG_RELEASE >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_PATCH$4"$TSC_PRJG_PATCH >> $5
 
-    $TSC_SBP_ECHOE "\n"$1"TSC_PRJG_VERSION$4"$TSC_PRJG_VERSION >> $5
-    $TSC_SBP_ECHOE $1"TSC_PRJG_VERSION_S$4"$TSC_PRJG_VERSION_S >> $5
-	
+	$TSC_SBP_ECHOE "\n"$1"TSC_PRJG_VERSION$4"$TSC_PRJG_VERSION >> $5
+	$TSC_SBP_ECHOE $1"TSC_PRJG_VERSION_S$4"$TSC_PRJG_VERSION_S >> $5
+
 	$TSC_SBP_ECHOE "\n"$2" config directory names" >> $5
-	
-    $TSC_SBP_ECHOE "\n"$1"TSC_CDN_CLI$4"$TSC_CDN_CLI >> $5
+
+	$TSC_SBP_ECHOE "\n"$1"TSC_CDN_CLI$4"$TSC_CDN_CLI >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_DOC$4"$TSC_CDN_DOC >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_DOCDEVEL$4"$TSC_CDN_DOCDEVEL >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_DOCUSER$4"$TSC_CDN_DOCUSER >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDN_GUI$4"$TSC_CDN_GUI >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDN_GUI$4"$TSC_CDN_GUI >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_HW$4"$TSC_CDN_HW >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_INCL$4"$TSC_CDN_INCL >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_INSTALL$4"$TSC_CDN_INSTALL >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_LIB$4"$TSC_CDN_LIB >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDN_RPM$4"$TSC_CDN_RPM >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDN_SNAP$4"$TSC_CDN_SNAP >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDN_SRC$4"$TSC_CDN_SRC >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDN_SRPM$4"$TSC_CDN_SRPM >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDN_RPM$4"$TSC_CDN_RPM >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDN_SNAP$4"$TSC_CDN_SNAP >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDN_SRC$4"$TSC_CDN_SRC >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDN_SRPM$4"$TSC_CDN_SRPM >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_STABLE$4"$TSC_CDN_STABLE >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDN_TESTING$4"$TSC_CDN_TESTING >> $5
 
 	$TSC_SBP_ECHOE "\n"$2" config file names" >> $5
-	
-    $TSC_SBP_ECHOE "\n"$1"TSC_CFN_CFG$4"$TSC_CFN_CFG>> $5	
-    $TSC_SBP_ECHOE $1"TSC_CFN_CMK$4"$TSC_CFN_CMK>> $5
-    $TSC_SBP_ECHOE $1"TSC_CFN_CH$4"$TSC_CFN_CH >> $5
-    $TSC_SBP_ECHOE $1"TSC_CFN_MF$4"$TSC_CFN_MF >> $5
-    $TSC_SBP_ECHOE $1"TSC_CFN_SNAPYAML$4"$TSC_CFN_SNAPYAML >> $5
-    $TSC_SBP_ECHOE $1"TSC_CFN_SPEC$4"$TSC_CFN_SPEC >> $5
+
+	$TSC_SBP_ECHOE "\n"$1"TSC_CFN_CFG$4"$TSC_CFN_CFG>> $5	
+	$TSC_SBP_ECHOE $1"TSC_CFN_CMK$4"$TSC_CFN_CMK>> $5
+	$TSC_SBP_ECHOE $1"TSC_CFN_CH$4"$TSC_CFN_CH >> $5
+	$TSC_SBP_ECHOE $1"TSC_CFN_MF$4"$TSC_CFN_MF >> $5
+	$TSC_SBP_ECHOE $1"TSC_CFN_SNAPYAML$4"$TSC_CFN_SNAPYAML >> $5
+	$TSC_SBP_ECHOE $1"TSC_CFN_SPEC$4"$TSC_CFN_SPEC >> $5
 
 	$TSC_SBP_ECHOE "\n"$2" config directory path absolute and relative to configure" >> $5
-	
-    $TSC_SBP_ECHOE "\n"$1"TSC_CDPA_CONF$4"$TSC_CDPA_CONF >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPR_CONF$4"$TSC_CDPR_CONF >> $5
+
+	$TSC_SBP_ECHOE "\n"$1"TSC_CDPA_CONF$4"$TSC_CDPA_CONF >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPR_CONF$4"$TSC_CDPR_CONF >> $5
 
 	$TSC_SBP_ECHOE "\n"$2" config directory paths absolute" >> $5
 
 	$TSC_SBP_ECHOE "\n"$1"TSC_CDPA_DOC$4"$TSC_CDPA_DOC >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPA_INCL$4"$TSC_CDPA_INCL >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPA_INCL$4"$TSC_CDPA_INCL >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDPA_INSTALL$4"$TSC_CDPA_INSTALL >> $5	
-    $TSC_SBP_ECHOE $1"TSC_CDPA_LIB$4"$TSC_CDPA_LIB >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPA_RPM$4"$TSC_CDPA_RPM >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPA_SNAP$4"$TSC_CDPA_SNAP >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPA_SRC$4"$TSC_CDPA_SRC >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPA_SRPM$4"$TSC_CDPA_SRPM >> $5	
-	
+	$TSC_SBP_ECHOE $1"TSC_CDPA_LIB$4"$TSC_CDPA_LIB >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPA_RPM$4"$TSC_CDPA_RPM >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPA_SNAP$4"$TSC_CDPA_SNAP >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPA_SRC$4"$TSC_CDPA_SRC >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPA_SRPM$4"$TSC_CDPA_SRPM >> $5	
+
 	$TSC_SBP_ECHOE "\n"$2" config directory path relative" >> $5
 
 	$TSC_SBP_ECHOE "\n"$1"TSC_CDPR_DOC$4"$TSC_CDPR_DOC >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPR_INCL$4"$TSC_CDPR_INCL >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPR_INCL$4"$TSC_CDPR_INCL >> $5
 	$TSC_SBP_ECHOE $1"TSC_CDPR_INSTALL$4"$TSC_CDPR_INSTALL >> $5	
-    $TSC_SBP_ECHOE $1"TSC_CDPR_LIB$4"$TSC_CDPR_LIB >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPR_RPM$4"$TSC_CDPR_RPM >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPR_SNAP$4"$TSC_CDPR_SNAP >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPR_SRC$4"$TSC_CDPR_SRC >> $5
-    $TSC_SBP_ECHOE $1"TSC_CDPR_SRPM$4"$TSC_CDPR_SRPM >> $5		
-	
+	$TSC_SBP_ECHOE $1"TSC_CDPR_LIB$4"$TSC_CDPR_LIB >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPR_RPM$4"$TSC_CDPR_RPM >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPR_SNAP$4"$TSC_CDPR_SNAP >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPR_SRC$4"$TSC_CDPR_SRC >> $5
+	$TSC_SBP_ECHOE $1"TSC_CDPR_SRPM$4"$TSC_CDPR_SRPM >> $5		
+
 	$TSC_SBP_ECHOE "\n"$2" config directory paths absolute with filenames" >> $5
-	
+
 	$TSC_SBP_ECHOE "\n"$1"TSC_CDPAFN_CH$4"$TSC_CDPAFN_CH >> $5	
 	$TSC_SBP_ECHOE $1"TSC_CDPAFN_CMK$4"$TSC_CDPAFN_CMK >> $5	
 	$TSC_SBP_ECHOE $1"TSC_CDPAFN_MK$4"$TSC_CDPAFN_MK >> $5	
@@ -257,27 +257,27 @@ tsc_write_env(){
 	$TSC_SBP_ECHOE $1"TSC_CDPRFN_SPEC$4"$TSC_CDPRFN_SPEC >> $5	
 
 	$TSC_SBP_ECHOE "\n"$2" config directory path relative" >> $5
-	
-    $TSC_SBP_ECHOE "\n"$1"TSC_SBP_AR$4"$TSC_SBP_AR >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_BISON$4"$TSC_SBP_BISON >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_CC$4"$TSC_SBP_CC >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_CP$4"$TSC_SBP_CP >> $5
+
+	$TSC_SBP_ECHOE "\n"$1"TSC_SBP_AR$4"$TSC_SBP_AR >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_BISON$4"$TSC_SBP_BISON >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_CC$4"$TSC_SBP_CC >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_CP$4"$TSC_SBP_CP >> $5
 	$TSC_SBP_ECHO $1"TSC_SBP_ECHO$4"$TSC_SBP_ECHO >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_ECHOE$4"$TSC_SBP_ECHOE >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_LEX$4"$TSC_SBP_LEX >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_ECHOE$4"$TSC_SBP_ECHOE >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_LEX$4"$TSC_SBP_LEX >> $5
 	$TSC_SBP_ECHOE $1"TSC_SBP_MK$4"$TSC_SBP_MK >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_MKDIR$4"$TSC_SBP_MKDIR >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_RM$4"$TSC_SBP_RM >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_RMDIR$4"$TSC_SBP_RMDIR >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_RMDIRI$4"$TSC_SBP_RMDIRI >> $5
-    $TSC_SBP_ECHOE $1"TSC_SBP_YACC$4"$TSC_SBP_YACC >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_MKDIR$4"$TSC_SBP_MKDIR >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_RM$4"$TSC_SBP_RM >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_RMDIR$4"$TSC_SBP_RMDIR >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_RMDIRI$4"$TSC_SBP_RMDIRI >> $5
+	$TSC_SBP_ECHOE $1"TSC_SBP_YACC$4"$TSC_SBP_YACC >> $5
 
 	$TSC_SBP_ECHOE "\n"$2" linker and compiler flags" >> $5
 
-    $TSC_SBP_ECHOE "\n"$1"CFLAGS_GLIB$4"$CFLAGS_GLIB >> $5
-    $TSC_SBP_ECHOE $1"CFLAGS_GTK$4"$CFLAGS_GTK >> $5
+	$TSC_SBP_ECHOE "\n"$1"CFLAGS_GLIB$4"$CFLAGS_GLIB >> $5
+	$TSC_SBP_ECHOE $1"CFLAGS_GTK$4"$CFLAGS_GTK >> $5
 	$TSC_SBP_ECHOE $1"LIBS_GLIB$4"$LIBS_GLIB >> $5
-    $TSC_SBP_ECHOE $1"LIBS_GTK$4"$LIBS_GTK >> $5
+	$TSC_SBP_ECHOE $1"LIBS_GTK$4"$LIBS_GTK >> $5
 
 }
 
@@ -292,16 +292,16 @@ tsc_write_env "#define " "//" "" " " $TSC_CDPRFN_CH
 
 tsc_write_spec(){
 
-    $TSC_SBP_ECHOE "write" $4
-    $TSC_SBP_ECHOE $1"\n"$1" Spec-File("$2") for "$2"\n"$1 > $4
-    $TSC_SBP_ECHOE "Summary: Volarodeo("$2") App for Volatrading" >> $4
-    $TSC_SBP_ECHOE "Version: "$TSC_PRJG_MAJOR"."$TSC_PRJG_MINOR >> $4
-    $TSC_SBP_ECHOE "Release: "$TSC_PRJG_RELEASE"-"$TSC_PRJG_PATCH >> $4
-    $TSC_SBP_ECHOE "License: MIT" >> $4
-    $TSC_SBP_ECHOE "Group: Applications/Productivity" >> $4
-    $TSC_SBP_ECHOE "Source: https://github.com/Chartwalker/Volarodeo/stable/"$TSC_PRJG_VERSION".src.tgz" >> $4
-    $TSC_SBP_ECHOE "URL: https://github.com/Chartwalker/Volarodeo/stable/doc/index.html" >> $4
-    $TSC_SBP_ECHOE "\n%description: see manual pdf at "$TSC_CDPR_CONF"/"$TSC_CDN_DOC >> $4
+	$TSC_SBP_ECHOE "write" $4
+	$TSC_SBP_ECHOE $1"\n"$1" Spec-File("$2") for "$2"\n"$1 > $4
+	$TSC_SBP_ECHOE "Summary: Volarodeo("$2") App for Volatrading" >> $4
+	$TSC_SBP_ECHOE "Version: "$TSC_PRJG_MAJOR"."$TSC_PRJG_MINOR >> $4
+	$TSC_SBP_ECHOE "Release: "$TSC_PRJG_RELEASE"-"$TSC_PRJG_PATCH >> $4
+	$TSC_SBP_ECHOE "License: MIT" >> $4
+	$TSC_SBP_ECHOE "Group: Applications/Productivity" >> $4
+	$TSC_SBP_ECHOE "Source: https://github.com/Chartwalker/Volarodeo/stable/"$TSC_PRJG_VERSION".src.tgz" >> $4
+	$TSC_SBP_ECHOE "URL: https://github.com/Chartwalker/Volarodeo/stable/doc/index.html" >> $4
+	$TSC_SBP_ECHOE "\n%description: see manual pdf at "$TSC_CDPR_CONF"/"$TSC_CDN_DOC >> $4
 }
 
 tsc_write_spec "#" "de" $TSC_PRJG_LANG_DE $TSC_CDPRFN_SPEC
@@ -313,15 +313,15 @@ tsc_write_spec "#" "de" $TSC_PRJG_LANG_DE $TSC_CDPRFN_SPEC
 # $4 outputfile
 
 tsc_write_snap_yaml(){
-    $TSC_SBP_ECHOE "write" $4
-    $TSC_SBP_ECHOE "name: volarodeo" > $4
-    $TSC_SBP_ECHOE "summary: is a tool to manage setups for very high risk markets like crypto" >> $4
-    $TSC_SBP_ECHOE "description: |" >> $4
-    $TSC_SBP_ECHOE "  is a tool to manage setups for very high risk markets like crypto" >> $4
-    $TSC_SBP_ECHOE "adopt-info: volarodeo" >> $4
-    $TSC_SBP_ECHOE "base: core22" >> $4
-    $TSC_SBP_ECHOE "grade: devel" >> $4
-    $TSC_SBP_ECHOE "confinement: devmode" >> $4
+	$TSC_SBP_ECHOE "write" $4
+	$TSC_SBP_ECHOE "name: volarodeo" > $4
+	$TSC_SBP_ECHOE "summary: is a tool to manage setups for very high risk markets like crypto" >> $4
+	$TSC_SBP_ECHOE "description: |" >> $4
+	$TSC_SBP_ECHOE "  is a tool to manage setups for very high risk markets like crypto" >> $4
+	$TSC_SBP_ECHOE "adopt-info: volarodeo" >> $4
+	$TSC_SBP_ECHOE "base: core22" >> $4
+	$TSC_SBP_ECHOE "grade: devel" >> $4
+	$TSC_SBP_ECHOE "confinement: devmode" >> $4
 }
 
 tsc_write_snap_yaml "#" "de" $TSC_PRJG_LANG_DE $TSC_CDPRFN_SNAPYAML
