@@ -2,7 +2,7 @@
 #include <volarodeo/gui/volarodeo.h>
 #include <gtk/gtk.h>
 
-static gint delete_Event(GtkWidget * widget, GdkEvent event, gpointer data){
+static gint delete_Event(GtkWidget * Widget_p, GdkEvent Event_p, gpointer Data_p){
 #ifdef __TSC_PRJG_LANG_DE__
   g_print ("Das Anwendungsfenster wird geschlossen.\n");
 #endif
@@ -12,7 +12,7 @@ static gint delete_Event(GtkWidget * widget, GdkEvent event, gpointer data){
   return FALSE;
 }
 
-static void end (GtkWidget * widget, gpointer data) {
+static void end(GtkWidget * Widget_p, gpointer Data_p) {
 #ifdef __TSC_PRJG_LANG_DE__
   g_print ("Die App wird beendet.\n");
 #endif
@@ -22,31 +22,31 @@ static void end (GtkWidget * widget, gpointer data) {
   gtk_main_quit ();
 }
 
-int main (int argc, char **argv) {
-  GtkWindow *win;
-  GdkPixbuf *pic;
+int main(int argc, char **argv) {
+  GtkWindow *Window_p;
+  GdkPixbuf *Pic_p;
   /* init the environment */
-  gtk_init (&argc, &argv);
+  gtk_init(&argc, &argv);
 
   /* creating widgets */
   /* load image to Pixbuf */
-  pic = gdk_pixbuf_new_from_file ("icons/rattelsnake.png", NULL);
+  Pic_p = gdk_pixbuf_new_from_file ("icon/rattelsnake.png", NULL);
   /* set defaults */
-  win = g_object_new (GTK_TYPE_WINDOW,
+  Window_p = g_object_new (GTK_TYPE_WINDOW,
                       "title", TSC_PRJG_VERSION_S,
                       "default-width", 1000,
                       "default-height", 800,
                       "resizable", TRUE,
                       "window-position", GTK_WIN_POS_CENTER,
-                      "border-width", 5, "icon", pic, NULL);
+                      "border-width", 55, "icon", Pic_p, NULL);
   /* create callbacks  */
-  g_signal_connect ( win, "delete-event",
+  g_signal_connect ( Window_p, "delete-event",
                      G_CALLBACK (delete_Event), NULL);
-  g_signal_connect ( win, "destroy",
+  g_signal_connect ( Window_p, "destroy",
                      G_CALLBACK (end), NULL);
 
   /* show widget */
-  gtk_widget_show_all (GTK_WIDGET (win));
+  gtk_widget_show_all (GTK_WIDGET (Window_p));
   /* main loop */
   gtk_main ();
 #ifdef __TSC_PRJG_LANG_DE__
