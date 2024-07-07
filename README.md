@@ -1,6 +1,5 @@
 # Volarodeo
- - is a tool to manage setups for very high risk markets
- like crypto
+ - is a tool to manage setups for very high risk markets with system "setup3"
 
 Step1: 0.1.xxx - implement the API as a fast desktop-app under C/C++ with cygwin64 and linux64
 
